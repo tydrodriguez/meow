@@ -1,0 +1,13 @@
+name: Hello Garfield
+
+on: [push]
+
+jobs:
+    say-meow:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
+            - name: Say Meow
+              run: echo "Meow, Garfield"
